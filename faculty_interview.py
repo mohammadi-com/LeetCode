@@ -3,10 +3,9 @@ import requests
 # GITHUB_LIST_REPOS_API =  "https://api.github.com/users/"
 
 def get_top_5(repos: list) -> list:
-
+    pass
 
 def get_top_5_repos(username: str) -> list[str]:
-
     all_repos = requests.get(url=f"https://api.github.com/users/{username}/repos", params={"per_page": 100}).json()
     list_of_top_5s = []
 
